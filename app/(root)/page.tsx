@@ -4,9 +4,9 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <Button>Button</Button>
+      prostore
     </div>
   )
-}
+} 
 
 export default page
