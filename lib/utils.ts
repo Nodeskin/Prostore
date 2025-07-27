@@ -11,7 +11,7 @@ export function ConvertToPlainObject<T>(data: T): T {
   return JSON.parse(JSON.stringify(data));
 }
 
-//Format number with decomal placces
+//Format number with decimal places
 
 export function formatNumberWithDecimal(num: number): string {
  const [int, decimal] = num.toString().split('.');

@@ -22,4 +22,3 @@ export const insertProductSchema = z.object({
 
 });
 
-export type Product = z.infer<typeof insertProductSchema>;
