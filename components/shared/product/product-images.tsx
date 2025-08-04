@@ -19,7 +19,7 @@ const ProductImages = ({ images }: { images: string[] }) => {
           <div key={image} onClick={() => setCurrent(index)}>
             <Image
               src={image}
-              alt={`Product Image ${index + 1}`}
+              alt="Product Image"
               width={100}
               height={100}
               className={cn(
