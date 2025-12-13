@@ -9,7 +9,7 @@ import ProductImages from "@/components/shared/product/product-images";
 const ProductDetailsPage = async (props: {
   params: Promise<{ slug: string }>;
 }) => {
-    // console.log(props, "props")
+    console.log(props, "props")
   const { slug } = await props.params;
   const product = await getProductBySlug(slug);
   if (!product) notFound();
@@ -22,6 +22,7 @@ const ProductDetailsPage = async (props: {
     </div>
     {/* Details Column */}
     <div className="col-span-2 p-5">
+        
         <div className="flex flex-col gap-6">
             <p>
                 {product.brand} {product.category}
