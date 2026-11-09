@@ -1,14 +1,10 @@
 import {cn} from '@/lib/utils'
+import { formatNaira } from '@/lib/cart'
 
 const ProductPrice = ({value, className}:{value:number; className?:string}) => {
-//   Ensure two decimal places
-const stringValue = value.toFixed(2);
-const [intValue, floatValue ] = stringValue.split('.')
     return (
     <p className={cn('text-2xl', className)}>
-        <span className="text-xs align-super">$</span>
-        {intValue}
-        <span className="text-xs align-super">.{floatValue}</span>
+        {formatNaira(value)}
     </p>
   )
 }

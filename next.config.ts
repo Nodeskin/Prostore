@@ -5,11 +5,15 @@ const nextConfig: NextConfig = {
   //   ignoreBuildErrors: true
   // },
   images: {
-    remotePatterns:[
+    remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'utfs.io',
+        protocol: "https",
+        hostname: "utfs.io",
         port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
     ],
   },
